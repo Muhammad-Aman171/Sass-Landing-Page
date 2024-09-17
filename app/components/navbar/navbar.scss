@@ -1,0 +1,47 @@
+
+
+@use 'global.scss' as color;
+
+.navbar{
+    border: 1px solid;
+    background-color: color.$background-color;
+    height: calc(4rem + 5vh);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .heading{
+        border: 1px solid;
+        color: color.$font-color;
+        display: flex;
+        align-items: center;
+        h1{
+            margin-left: .5em;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+    }
+    .pages-name{
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: color.$font-color;
+        width: calc(30em + 20vw);
+        span{
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .buttons{
+            display: flex;
+            .navbar-button{
+                background-color: color.$secondry-color  ;
+                height: 10vh;
+                width: 8vw;
+            }
+        }
+    }
+}
