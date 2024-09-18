@@ -1,0 +1,44 @@
+@use 'global.scss' as color;
+
+.plan-card{
+    border: 1px solid color.$secondry-color;
+    border-radius: 5px;
+    width: 25vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    h3{
+        font-size: x-large;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    h1{
+        font-weight: 800;
+        font-size: xx-large;
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 10px;
+
+    }
+    span{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        .check{
+            width: 2vw;
+            height: 1.2rem;
+        }
+    }
+    .plan-button{
+        border: 1.5px solid color.$secondry-color;
+        background-color: white;
+        color: black;
+        width: 10vw;
+        height: 7vh;
+        margin-left: 10px;
+
+    }
+}

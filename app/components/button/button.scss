@@ -1,6 +1,6 @@
 @use 'global.scss' as color;
 
-.button{
+.button {
     border-radius: 6px;
     background-color: color.$button-card-color;
     display: flex;
@@ -9,4 +9,14 @@
     width: 13em;
     height: 4em;
     color: white;
+    cursor: pointer;
+    button:hover{
+        transform: translateX(5px);
+        transition: .5s;
+    }
+    .arrow:hover{
+        transform: translateX(5px);
+        transition: .5s;
+    }
+
 }

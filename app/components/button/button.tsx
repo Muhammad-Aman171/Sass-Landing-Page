@@ -4,14 +4,15 @@ import { FaArrowRight } from 'react-icons/fa6'
 import './button.scss'
 
 interface ButtonTypes{
+  style?:string;
   heading?:string;
 }
 
-const Button:React.FC<ButtonTypes> =({heading})=> {
+const Button:React.FC<ButtonTypes> =({style,heading})=> {
   return (
-    <div className="button">
+    <div className={`${style} button`}>
         <button>{heading}</button>
-        <FaArrowRight className="ml-3"/>
+        <FaArrowRight className="arrow ml-3"/>
     </div>
   )
 }
