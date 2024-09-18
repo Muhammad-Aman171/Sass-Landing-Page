@@ -1,0 +1,16 @@
+@use 'global.scss' as color;
+
+
+
+
+.card{
+    height: 23rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1{
+        font-size: calc(2.5rem + 1vw);
+        line-height: 4rem;
+    }
+}

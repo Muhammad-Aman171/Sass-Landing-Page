@@ -1,0 +1,62 @@
+@use 'global.scss' as color;
+
+.homePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .card1{
+        background-color: color.$background-color;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .backimg{
+            border: 1px solid;
+            width: 100%;
+        }
+        
+        span{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            .img1{
+                height: calc(10rem + 55vh);
+                width: calc(10rem + 37vw) ;
+            }
+        }
+    }
+    .card2{
+        border: 2px solid;
+        width: 90%;
+        height: calc(10rem + 41vh);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px 40px 0;
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .card{
+                color: black;
+                height: calc(13rem + 20vh);
+                h1{
+                    font-weight: 700;
+                    width: 20vw;
+                }
+                p{
+                    font-size: 1.1vw;
+                }
+            }
+            .img2{
+                height: calc(10rem + 41vh);
+                width: calc(25rem + 60vw) ;
+            }
+        }
+    }
+}

@@ -5,12 +5,12 @@ import { DM_Sans } from "@next/font/google";
 import "./navbar.scss";
 
 import Logo from "@/public/assets/Logo.png";
-import Button from "../button/button";
+import Button from "../button/button"; 
 
 
 const dm_sans = DM_Sans({
     subsets: ["latin"],
-    weight: "400"
+    weight: ['100','200' ,'400', '500', '700'],
 })
 
 const Navbar: React.FC = () => {
@@ -22,24 +22,24 @@ const Navbar: React.FC = () => {
       </div>
       <div className="pages-name">
         <span>
-          <p className={`${dm_sans.className} font-extrathin`}>Product</p>
-          <FaAngleDown className={` ml-3 `}/>
+          <p className={`${dm_sans.className} pages  `}>Product</p>
+          <FaAngleDown className={` ml-3 arrow `}/>
         </span>
         <span>
-          <p className={`${dm_sans.className} font-extrathin`}>Solutions</p>
-          <FaAngleDown className="ml-3"/>
+          <p className={`${dm_sans.className} pages  `}>Solutions</p>
+          <FaAngleDown className="ml-3 arrow"/>
         </span>
         <span>
-          <p className={`${dm_sans.className} font-extrathin`}>Resources</p>
-          <FaAngleDown className="ml-3"/>
+          <p className={`${dm_sans.className} pages `}>Resources</p>
+          <FaAngleDown className="ml-3 arrow"/>
         </span>
         <span>
-          <p className={`${dm_sans.className} font-extrathin`}>Pricing</p>
-          <FaAngleDown className="ml-3"/>
+          <p className={`${dm_sans.className} pages `}>Pricing</p>
+          <FaAngleDown className="ml-3 arrow"/>
         </span>
         <div className="buttons">
             <button className="navbar-button">Login</button>
-            <Button/>
+            <Button heading="Try Whitepace free"/>
         </div>
       </div>
     </div>
