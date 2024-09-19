@@ -31,6 +31,7 @@ export default function Home() {
         <Image src={BackImg} alt="Img does not show" className=" backimg" />
         <span>
           <Card
+            style="card"
             heading="Get More Done with whitepace"
             paragraph="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks"
             buttonheading="Try Whitepace free"
@@ -95,17 +96,19 @@ export default function Home() {
         </span>
         <span className="plan">
           <PlanCard
+            style="first"
             heading="Free"
             rupess="$0"
             para="Capture ideas and find them quickly"
           />
           <PlanCard
-            style="middle-card"
+            style="middle"
             heading="Personal"
             rupess="$11.99"
             para="Keep home and family on track"
           />
           <PlanCard
+            style="last"
             heading="Organization"
             rupess="$49.99"
             para="Capture ideas and find them quickly"
@@ -151,7 +154,6 @@ export default function Home() {
         </span>
       </div>
       <div className="card11">
-        
         <h1>Try Whitepace today</h1>
         <p>Get started for free.<br/>
         Add your whole team as your needs grow.</p>

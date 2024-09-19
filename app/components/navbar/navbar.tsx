@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { FaAngleDown } from "react-icons/fa";
 import { DM_Sans } from "@next/font/google";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
 import "./navbar.scss";
 
 import Logo from "@/public/assets/Logo.png";
@@ -17,7 +19,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar">
       <div className="heading">
-        <Image src={Logo} alt="img does not show" className="w-[3vw] h-[4vh]  " />
+        <Image src={Logo} alt="img does not show"  />
         <h1>whitepace</h1>
       </div>
       <div className="pages-name">
@@ -39,7 +41,8 @@ const Navbar: React.FC = () => {
         </span>
         <div className="buttons">
             <button className="navbar-button">Login</button>
-            <Button heading="Try Whitepace free"/>
+            <Button style="btn" heading="Try Whitepace free"/>
+            <HiOutlineMenuAlt3 className="bars"/>
         </div>
       </div>
     </div>

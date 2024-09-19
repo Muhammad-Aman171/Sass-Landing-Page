@@ -1,68 +1,102 @@
-
-
 @use 'global.scss' as color;
 
-.navbar{
+.navbar {
     background-color: color.$background-color;
     height: calc(4rem + 5vh);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .heading{
+
+    .heading {
         color: color.$font-color;
         display: flex;
         align-items: center;
-        h1{
+        justify-content: space-between;
+        h1 {
             margin-left: .5em;
             font-size: 1.5rem;
             font-weight: 700;
         }
-
     }
-    .pages-name{
+
+    .pages-name {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: color.$font-color;
         width: calc(40em + 20vw);
-        span{
+        @media(max-width: 768px) {
+            display: flex;
+            justify-content: end;
+            width: 10vw;
+            height: 6vh;
+            margin-left: 30vw;
+        }
+
+        span {
             display: flex;
             align-items: center;
             justify-content: space-between;
             cursor: pointer;
-            .pages:hover{
+
+            .pages:hover {
                 transition: 0.5s ease-in-out;
                 transform: translateY(-5px);
             }
         }
-        .buttons{
+
+        .buttons {
             width: 22rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .navbar-button{
+
+            .navbar-button {
                 border-radius: 6px;
-                background-color: color.$secondry-color  ;
+                background-color: color.$secondry-color ;
                 color: color.$background-color;
                 font-size: 1.3em;
                 height: 3em;
                 width: 5.5em;
             }
+
+            .bars {
+                display: none;
+                @media (max-width:1152px){
+                    display: block;
+                    font-size: 2.5rem;
+                    justify-content: end;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 900px ) {
-    .pages-name{
-        span{
-            .pages{
+@media (max-width: 1152px) {
+    .pages-name {
+        span {
+            .pages {
                 display: none;
             }
-            .arrow{
+            .arrow {
                 display: none;
             }
         }
-        
     }
-    
+
+}
+
+@media (max-width: 768px){
+    .pages-name{
+        .buttons{
+            
+            .btn{
+                display: none;
+            }
+            .navbar-button{
+                display: none;
+            }
+        }
+    }
 }
