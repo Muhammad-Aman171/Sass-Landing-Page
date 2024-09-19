@@ -22,6 +22,7 @@ import Img9 from "@/public/assets/Slack.png";
 import Img10 from "@/public/assets/Group 246.png";
 import Img11 from "@/public/assets/Element3.png";
 import Img12 from "@/public/assets/Apps.png";
+import Img13 from "@/public/assets/Logo.png"
 
 export default function Home() {
   return (
@@ -150,6 +151,7 @@ export default function Home() {
         </span>
       </div>
       <div className="card11">
+        
         <h1>Try Whitepace today</h1>
         <p>Get started for free.<br/>
         Add your whole team as your needs grow.</p>
@@ -162,7 +164,37 @@ export default function Home() {
         </span>
       </div>
       <div className="footer">
-        
+        <div>
+          <span>
+            <Image src={Img13} alt="img does not show"/>
+            <h1>whitepace</h1>
+          </span>
+          <p>whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
+        </div>
+        <div>
+          <h1>Product</h1>
+          <p>Overview</p>
+          <p>Pricing</p>
+          <p>Customer stories</p>
+        </div>
+        <div>
+          <h1>Resources</h1>
+          <p>Blog</p>
+          <p>Guides & tutorials</p>
+          <p>Help center</p>
+        </div>
+        <div>
+          <h1>Company</h1>
+          <p>About us</p>
+          <p>Careers</p>
+          <p>Media kit</p>
+        </div>
+        <div className="last">
+          <h1>Try It Today</h1>
+          <p>Get started for free.
+          Add your whole team as your needs grow.</p>
+          <Button style="button" heading="Start today"/>
+        </div>
       </div>
     </div>
   );
